@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .gift{
+    width: 400px;
+    height: 400px;
+  
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    transition: .30s ease;
+  }
+  
+  .hover:hover{
+    transform: rotate(-14deg) translateY(-100px);
+  }
+  
+  .ribbons{
+    display: flex;
+  }
+  
+  .thread{
+    width: 150px;
+    height: 50px;
+    border: 10px solid rgb(211, 161, 36);
+    border-radius: 50% / 100% 50% 50% 0%;
+  }
+  
+  .thread.left{
+    transform: rotateY(180deg);
+  }
+  
+  .ribbon{
+    background: yellowgreen;
+  }
+  
+  .top{
+    width: 400px;
+    height: 100px;
+  
+    background: seagreen;
+  
+    display: flex;
+    justify-content: center;
+  
+    filter: drop-shadow(0 2px 5px);
+    border-radius: 15px;
+  }
+  
+  .top > .ribbon{
+    width: 120px;
+    height: 100px;
+  }
+  
+  .box{
+    width: 360px;
+    height: 250px;
+    background: seagreen;
+  
+    display: flex;
+    justify-content: center;
+  
+    border-radius: 0 0 15px 15px;
+  
+  }
+  
+  .box > .ribbon{
+    background: yellowgreen;
+    width: 100px;
+    height: 100%;
+  }
